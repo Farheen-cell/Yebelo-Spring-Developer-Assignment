@@ -9,4 +9,6 @@ public interface PlayerService {
     String roleDice(Long playerId, Long gameId);
 
     PlayerDTO deletePlayer(Long playerId);
+
+    public String CalculateWinner(Long gameId);
 }
