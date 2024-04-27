@@ -1,4 +1,4 @@
-package com.monopoly.Model;
+package com.monopoly.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
@@ -24,6 +24,9 @@ public class Player {
     @NotNull
     @Min(value = 0)
     private int cash;
+
+    private int positionValue;
+    private int diceRollingCount;
 
     @ManyToOne
     @JoinColumn(name = "game_id")

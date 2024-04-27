@@ -1,4 +1,4 @@
-package com.monopoly.Model;
+package com.monopoly.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package com.monopoly.Model;
+package com.monopoly.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
@@ -28,6 +28,12 @@ public class Place {
     @NotNull
     @Min(value = 0)
     private int rent;
+
+    @NotNull
+    private int placeDiceValue;
+
+
+    private Boolean placeSoledStatus;
 
     @ManyToOne
     @JoinColumn(name = "game_id")
