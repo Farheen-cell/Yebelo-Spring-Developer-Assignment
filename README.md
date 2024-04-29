@@ -3,8 +3,8 @@
 
 This is a simple implementation of the Monopoly game backend using Spring Boot.
 
-# About
-Monopoly is a multi-player economics-themed board game. In the game, players roll two dice to move around the game board, buying and trading properties and developing them with houses and hotels. Players collect rent from their opponents, aiming to drive them into bankruptcy
+## About
+Monopoly is a multi-player economics-themed board game. In the game, players roll two dice to move around the game board, buying and trading properties, and developing them with houses and hotels. Players collect rent from their opponents, aiming to drive them into bankruptcy.
 
 ## Description
 
@@ -55,20 +55,7 @@ Swagger documentation is available at [http://localhost:8080/swagger-ui/index.ht
 ## Features
 
 ### Example System
-Person A : http://localhost:8080/create-game/ >> Game Created Successfully
-Person A : http://localhost:8080/roll-die/p1 >> Die rolled 11 and landed on Place ABC,
-Unclaimed place and hence bought for $200. Remaining balance is $800.
-Person B : http://localhost:8080/roll-die/p2 >> Die rolled 4 and landed on Place DEF, Unclaimed
-place and hence bought for $150. Remaining balance is $850.
-...
-Person A : http://localhost:8080/roll-die/p1 >> Die rolled 1 and landed on Place DEF, paid rent
-$100. Remaining balance is $700.
-Person B : http://localhost:8080/roll-die/p2 >> Die rolled 4 and landed on Place UES, Unclaimed
-place and hence bought for $150. Remaining balance is $700. Also Crossed “Start” gaining
-+200. Remaining Balance $900.
-...
-Person A : http://localhost:8080/roll-die/p1 >> Die rolled 1 and landed on Place DEF, paid rent
-$100. Remaining balance is $-100. Game Over, You lose!
+Person A: http://localhost:8080/create-game/ >> Game Created Successfully Person A: http://localhost:8080/roll-die/p1 >> Die rolled 11 and landed on Place ABC, Unclaimed place and hence bought for $200. Remaining balance is $800. Person B: http://localhost:8080/roll-die/p2 >> Die rolled 4 and landed on Place DEF, Unclaimed place and hence bought for $150. Remaining balance is $850. ... Person A: http://localhost:8080/roll-die/p1 >> Die rolled 1 and landed on Place DEF, paid rent $100. Remaining balance is $700. Person B: http://localhost:8080/roll-die/p2 >> Die rolled 4 and landed on Place UES, Unclaimed place and hence bought for $150. Remaining balance is $700. Also Crossed “Start” gaining +200. Remaining Balance $900. ... Person A: http://localhost:8080/roll-die/p1 >> Die rolled 1 and landed on Place DEF, paid rent $100. Remaining balance is $-100. Game Over, You lose!
 
 ### Completed
 
@@ -91,8 +78,7 @@ $100. Remaining balance is $-100. Game Over, You lose!
 
 ## Data Relationship Diagram
 
-![image](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/9999668c-213e-4898-8003-730374fab49a)
-
+![Data Relationship Diagram](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/9999668c-213e-4898-8003-730374fab49a)
 
 The diagram illustrates the data relationships and system flow within the Monopoly game backend.
 
@@ -100,20 +86,26 @@ The diagram illustrates the data relationships and system flow within the Monopo
 
 Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## Swagger Images 
- ### Image-1
-![image](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/62273284-d179-4365-956c-25c67b6ea31b)
+## Tests
 
+- **Service Tests**: Tests have been created for the service functions, ensuring their correctness and reliability.
+- **Controller Tests**: Tests have been created for the controller functions, verifying their behavior and API responses.
+
+## Swagger Images
+
+### Image-1
+
+![Image-1](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/62273284-d179-4365-956c-25c67b6ea31b)
 
 ### Image-2
-![image](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/8e468641-24ca-406a-aa2a-8b40f6453371)
 
-### Image-3(schemas)
-![image](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/00913d05-a0cf-4049-ab72-f837827aaa26)
+![Image-2](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/8e468641-24ca-406a-aa2a-8b40f6453371)
+
+### Image-3 (Schemas)
+
+![Image-3](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/00913d05-a0cf-4049-ab72-f837827aaa26)
 
 ### Image-4
-![image](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/eda66f62-f55c-48b1-a6f8-8e6939f9ce3e)
 
-
-
+![Image-4](https://github.com/Farheen-cell/Yebelo-Spring-Developer-Assignment/assets/103572478/eda66f62-f55c-48b1-a6f8-8e6939f9ce3e)
 
