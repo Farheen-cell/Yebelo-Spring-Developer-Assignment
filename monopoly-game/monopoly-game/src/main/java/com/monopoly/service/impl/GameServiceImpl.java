@@ -5,6 +5,7 @@ import com.monopoly.model.Game;
 import com.monopoly.model.Place;
 import com.monopoly.model.Player;
 import com.monopoly.paylode.GameDTO;
+import com.monopoly.paylode.PlaceDTO;
 import com.monopoly.paylode.PlayerDTO;
 import com.monopoly.repository.GameRepo;
 import com.monopoly.repository.PlaceRepo;
@@ -17,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service
@@ -38,7 +40,7 @@ public class GameServiceImpl implements GameService {
     @Override
     public GameDTO createGame(GameDTO gameDTO) {
 
-        List<Player> playerList = gameDTO.getPlayers();
+        List<PlayerDTO> playerList = gameDTO.getPlayers();
 
         Player player1 = modelMapper.map(playerList.get(0), Player.class);
 
@@ -54,7 +56,7 @@ public class GameServiceImpl implements GameService {
 
         List<Place> placeList = placeRepo.findAll().stream().toList();
 
-        gameDTO.setPlaces(placeList);
+        gameDTO.setPlaces(Collections.singletonList(modelMapper.map(placeList, PlaceDTO.class)));
         Game game = modelMapper.map(gameDTO , Game.class);
 
 

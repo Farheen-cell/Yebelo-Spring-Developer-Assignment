@@ -14,7 +14,7 @@ import java.util.List;
 public class GameDTO {
     private Long id;
 
-    private List<Player> players;
+    private List<PlayerDTO> players;
 
-    private List<Place> places;
+    private List<PlaceDTO> places;
 }
